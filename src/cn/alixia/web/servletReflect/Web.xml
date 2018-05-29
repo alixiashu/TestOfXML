@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://www.example.org/web-app_2_5" 
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://www.example.org/web-app_2_5 web-app_2_5.xsd"
+			version="2.5">
+	<!--
+	基础配置：servlet+servlet-mapping
+	要求：二者的 servlet-name必须一致
+	映射流程：
+		当用户通过servlet-mapping里的url访问时，通过 servlet-name找到
+		对应的servlet，通过servlet里的servlet-class接收数据并处理
+	 -->
+	<servlet>
+		<servlet-name>myServletReflect1</servlet-name>
+		<servlet-class>cn.alixia.web.servletReflect.MyServletReflect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myServletReflect1</servlet-name>
+		<url-pattern>/myServletReflect1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>myServletReflect2</servlet-name>
+		<servlet-class>cn.alixia.web.servletReflect.MyServletReflect2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>myServletReflect2</servlet-name>
+		<url-pattern>/myServletReflect2</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file></welcome-file>
+	</welcome-file-list>
+</web-app>
