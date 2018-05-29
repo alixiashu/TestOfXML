@@ -28,7 +28,7 @@ MyServletImpl测试类
 自定义Servlet接口
 ### IMyServlet.java
 IMyServlet接口MyServletImpl实现类
-### cn.alixia.web.servletReflect
+## cn.alixia.web.servletReflect
 ### Web.xml
 2个servlet节点和2个servlet-mapping节点（myServletReflect1，myServletReflect2）
 ### IMyServlet.java
